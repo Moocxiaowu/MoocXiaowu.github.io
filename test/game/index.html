@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>游戏</title>
-    <link href="游戏.css" rel="stylesheet" type="text/css">
+    <link href="game.css" rel="stylesheet" type="text/css">
     <script src="jquery-3.2.1.min.js" type="text/javascript" ></script>
 </head>
 <body class="back">
@@ -23,7 +23,7 @@
  //不能赋给变量 要让每个柱子的间距都随机
         function jianzhuzi() {
             $(".zhuzi").append('<div class="zhu1" style="width:'+kuan+'px ; left:0;"></div>');
-            /*var x = prompt("快点输入","");
+            /*var x = prompt("输入关卡数","");
             for(var i=0;i<x;i++);完成之后尝试左移后创建新的柱子*/
             setTimeout(function () {
                 var max=$(".donghua").offset().top;
