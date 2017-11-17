@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏</title>
+    <link href="游戏.css" rel="stylesheet" type="text/css">
+    <script src="jquery-3.2.1.min.js" type="text/javascript" ></script>
+</head>
+<body class="back">
+    <div>
+        <a href="javascript:void(0);" class="begin"></a>
+    </div>
+    <div class="donghua">
+        <div class="gunzi"></div>
+        <div class="xiaoren"><img src="image/stand.png" class="xiaoren1"/></div>
+        <div class="zhuzi"></div>
+    </div>
+
+<script>
+    var kuan = 100;
+    var num=0;
+    $(document).ready(function () {
+ //不能赋给变量 要让每个柱子的间距都随机
+        function jianzhuzi() {
+            $(".zhuzi").append('<div class="zhu1" style="width:'+kuan+'px ; left:0;"></div>');
+            /*var x = prompt("快点输入","");
+            for(var i=0;i<x;i++);完成之后尝试左移后创建新的柱子*/
+            setTimeout(function () {
+                var max=$(".donghua").offset().top;
+                var min=50;
+                for(var i=0;i<20;i++){
+                    var next=$(".zhu1").eq(i).offset().left;
+                    var sum = next+kuan+parseInt(Math.random()*(max-min))+min;
+                    $(".zhuzi").append('<div class="zhu1" style="width:'+kuan+'px ; left:'+sum+'px;"></div>');
+                }
+            },50)
+        }
+        jianzhuzi();
+        var stop = true;
+        $("body .begin").mousedown(function () {
+            $(".begin").addClass("beginDown");
+            if(stop === true){
+            var max=$(".donghua").offset().top;
+//            自定义动画 棍子在规定时间变化长度
+            $(".gunzi").animate({"width":max+"px"},1000);
+
+            }
+        });
+        $(".begin").mouseup(function () {
+            $(".begin").removeClass("beginDown");
+            if (stop === true) {
+                $("body .gunzi").stop();
+                $(".gunzi").addClass("daoxia");
+                pao();
+                stop = false;
+            }
+        });
+        function pao() {
+                var len = $(".gunzi").width();
+                setTimeout(function () {
+                    $("body .xiaoren").find("img").attr("src","image/run.gif");
+                    $(".xiaoren").find("img").animate({"left":(len+kuan)+"px"},1000,function () {
+                        var panduan = $("body .zhu1").eq(num+1).offset().left-kuan;
+                        if(len<panduan||len>panduan+kuan){
+                            fail()
+                        }else{
+                            $(".xiaoren").find("img").attr("src","image/stand.png").css("left","0").hide();
+                            $(".gunzi").removeClass("daoxia").width("0");
+                            var next=$(".zhu1").eq(num+1).css("left");
+                            $(".zhuzi").animate({"left":"-"+next},500,function () {
+                                $(".xiaoren").find("img").show();
+                                stop=true;
+                                num++;
+                                if(num === 100){
+                                    success()
+                                }
+                            })
+                        }
+                    })
+                },500)
+        }
+        function fail() {
+//            小人掉下
+                $(".xiaoren img").addClass("rotate");
+                setTimeout(function () {
+                    if(confirm("重玩否？")){
+                    shuaxin();
+                    }
+                    else{
+                        close()
+                    }
+                }, 500);
+        }
+        function success() {
+            setTimeout(function () {
+                if(confirm("恭喜过关，还玩吗？")){
+                    shuaxin();
+                }
+                else{
+                    close()
+                }
+            }, 500);
+        }
+        function shuaxin() {
+//            清空原样式
+                $("body .zhuzi").empty();
+                stop = true;
+//            小人、棍子、柱子初始化
+                num=0;
+                jianzhuzi();
+                $(".xiaoren img").attr("src","image/stand.png").css("left","0px").removeClass("rotate");
+                $(".gunzi").removeClass("daoxia").width("0px");
+                $(".zhuzi").css("left","0");
+        }
+    })
+</script>
+</body>
+</html>
