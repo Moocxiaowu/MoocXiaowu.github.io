@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+<title>H5</title>
+<link href="H5.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-3.2.1.min.js" type="text/javascript" ></script>
+</head>
+<body>
+<nav>
+    <a href="#">左上</a>
+    <a href="#">右下</a>
+    <a href="#">旋转</a>
+    <a href="#">上下翻转放大</a>
+    <a href="#">左右翻转缩小</a>
+    <a href="#">水平倾斜</a>
+    <a href="#">垂直倾斜</a>
+    <a href="#">倾斜</a>
+    <a href="#">3d倾斜</a>
+</nav>
+
+<div class="back">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <p>6</p>
+</div>
+
+<div id="nav">
+    <div class="title">全部商品分类</div>
+    <ul>
+        <li><a href="#">电脑</a>&nbsp;<a href="#">办公</a></li>
+        <li><a href="#">家具</a>&nbsp;<a href="#">家装</a></li>
+        <li><a href="#">服饰</a>&nbsp;<a href="#">鞋帽</a></li>
+        <li><a href="#">个护</a>&nbsp;<a href="#">化妆</a></li>
+    </ul>
+</div>
+<script>
+    $("nav a:eq(0)").hover(
+        function () {$("#nav").addClass("zuoshang")},
+        function () {$("*").removeClass("zuoshang")}
+    );
+    $("nav a:eq(1)").hover(
+        function () {$("body #nav").addClass("youxia")},
+        function () {$("body #nav").removeClass("youxia")}
+    );
+    $("nav a:eq(2)").hover(
+        function () {$("body #nav").addClass("xuanzhuan")},
+        function () {$("body #nav").removeClass("xuanzhuan")}
+    );
+    $("nav a:eq(3)").hover(
+        function () {$("body #nav").addClass("fangda")},
+        function () {$("body #nav").removeClass("fangda")}
+    );
+    $("nav a:eq(4)").hover(
+        function () {$("body #nav").addClass("suoxiao")},
+        function () {$("body #nav").removeClass("suoxiao")}
+    );
+    $("nav a:eq(5)").hover(
+        function () {$("body #nav").addClass("shuipin")},
+        function () {$("body #nav").removeClass("shuipin")}
+    );
+    $("nav a:eq(6)").hover(
+        function () {$("body #nav").addClass("chuizhi")},
+        function () {$("body #nav").removeClass("chuizhi")}
+    );
+    $("nav a:eq(7)").hover(
+        function () {$("body #nav").addClass("qingxie")},
+        function () {$("body #nav").removeClass("qingxie")}
+    );
+    $("nav a:eq(8)").hover(
+        function () {$("body #nav").addClass("three")},
+        function () {$("body #nav").removeClass("three")}
+    );
+</script>
+</body>
+</html>

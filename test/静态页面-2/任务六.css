@@ -1,0 +1,365 @@
+*{margin: 0;padding: 0}
+.bg{
+    background-color: #7B7B7B;
+    height: 2200px;
+    width: 1300px;
+    padding-top: 100px;
+}
+.bg-bg{
+    position: relative;
+    margin: auto;
+    background-color: white;
+    height: 1486px;
+    width: 880px;
+    padding: 0 50px;
+}
+.top-1{
+    height: 61px;
+    position: relative;
+    border-bottom: solid 2px #938e8c;
+    margin-bottom: 30px;
+}
+.bg-1{
+    float: left;
+    background-color: crimson;
+    width: 110px;
+    height: 61px;
+}
+.bg-1>a{
+    font-family: 黑体;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+.top-1>a{
+    font-family: 黑体;
+    font-size: 12px;
+    text-decoration: none;
+    color: red;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.top-2{
+    height:301px;
+}
+.bg-2{
+    float: left;
+    width:641px;
+    height:301px;
+    background-image: url("image/121.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-2-1{
+    float: left;
+    background-color: #009966;
+    width: 191px;
+    height: 301px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+.bg-2-2{
+    float: right;
+    background-color: hotpink;
+    width: 191px;
+    height: 301px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+.bg-3{
+    margin-left: 30px;
+    float:left;
+    border-top: solid 2px crimson;
+    width: 203px;
+    position: relative;
+}
+.bg-3 p:nth-child(1),.bg-3 p:nth-child(2){
+    line-height: 40px;
+    text-decoration: underline;
+    font-family: 微软雅黑;
+    font-size: 24px;
+}
+.bg-3 p:nth-child(1)>b,.bg-3 p:nth-child(2)>b{
+    font-size: 30px;
+}
+.bg-3 p:nth-child(3){
+    line-height: 10px;
+    font-family: 楷体;
+    font-size: 10px;
+}
+.bg-3 p:nth-child(4){
+    color: #75b86b;
+    font-family: 微软雅黑;
+    font-size: 116px;
+}
+.bg-3 p:nth-child(5){
+    float: left;
+    line-height: 43px;
+    font-family: 楷体;
+    font-size: 40px;
+}
+.bg-3 p:nth-child(6){
+    position: absolute;
+    left: 60px;
+    bottom: 15px;
+    float: left;
+    line-height: 10px;
+    font-family: 楷体;
+    font-size: 10px;
+}
+.bg-3 p:nth-child(7){
+    position: absolute;
+    left: 60px;
+    bottom: 7px;
+    width: 142px;
+    float: right;
+    line-height: 10px;
+    font-family: 楷体;
+    font-size: 10px;
+}
+.top-3{
+    margin-top: 10px;
+    border-top: solid red 2px;
+    overflow: hidden;
+    width: 640px;
+}
+.bg-4,.bg-5,.bg-6{
+    margin-top: 20px;
+    padding-left: 10px;
+    width: 200px;
+    float:left;
+    overflow: hidden;
+}
+.bg-4 b:nth-child(1){
+    font-size: 16px;
+    line-height: 30px;
+    color: #418c59;
+    font-family: 微软雅黑;
+    text-decoration: underline;
+}
+.bg-5 b:nth-child(1){
+    font-size: 16px;
+    line-height: 30px;
+    color: #d2994f;
+    font-family: 微软雅黑;
+    text-decoration: underline;
+}
+.bg-6 b:nth-child(1){
+    font-size: 16px;
+    line-height: 30px;
+    color: #cc7680;
+    font-family: 微软雅黑;
+    text-decoration: underline;
+}
+.bg-4 p{
+    font-size: 12px;
+    line-height: 16px;
+    color: #231815;
+    font-family: 微软雅黑;
+    text-decoration:none;
+    opacity: 0.6;
+}
+.bg-5 p{
+    font-size: 12px;
+    line-height: 16px;
+    color: #231815;
+    font-family: 微软雅黑;
+    text-decoration:none;
+    opacity: 0.6;
+}
+.bg-6 p{
+    font-size: 12px;
+    line-height: 16px;
+    color: #231815;
+    font-family: 微软雅黑;
+    text-decoration:none;
+    opacity: 0.6;
+}
+.bg-6>p>i{
+    color: #FF2832;
+}
+.top-6{
+    margin-top: 50px;
+    overflow: hidden;
+    padding-bottom: 50px;
+    border-bottom: solid 2px #7B7B7B;
+}
+.top-4{
+    overflow: hidden;
+    width: 405px;
+    float: left;
+}
+.bg-7{
+    border-bottom: solid #11456b 2px;
+    margin-bottom: 20px;
+}
+.bg-7>p:nth-child(1){
+    font-size: 42px;
+    color: #11456b;
+    line-height: 58px;
+    font-family: 黑体;
+    font-weight: bolder;
+    text-decoration:none;
+}
+.bg-7>p>b{
+    font-size: 72px;
+    color: #f5e327;
+    font-family: 黑体;
+    text-decoration:none;
+}
+.bg-7>p:nth-child(2){
+    font-size: 33px;
+    color: #11456b;
+    line-height: 58px;
+    font-family: 黑体;
+    font-weight: bolder;
+    text-decoration:none;
+}
+.bg-8>span{
+    padding: 0 8px ;
+    float: left;
+    font-size: 70px;
+    color: #f5e327;
+    font-family: 微软雅黑;
+    text-decoration:none;
+}
+.bg-8>p{
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 宋体;
+    text-decoration:none;
+    opacity: 0.6;
+}
+.bg-8>p:nth-child(3){
+    text-indent: 2em;
+}
+.bg-8>img{
+    float: right;
+    width: 200px;
+    height: 300px;
+    padding: 15px 15px;
+}
+.top-5{
+    overflow: hidden;
+    width: 418px;
+    float: left;
+    margin-left: 30px;
+}
+.bg-9{
+    width: 460px;
+    height: 275px;
+    background-image: url("image/4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bg-9-1{
+    overflow: hidden;
+    height: 60px;
+    width: 460px;
+    background: rgba(0,0,0,0.5) none repeat;
+    position: absolute;
+    bottom: 0;
+}
+.bg-9-1>p{
+    border-left: solid 3px #009966;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 45px;
+    color: #009966;
+    font-style: italic;
+    font-size: 16px;
+}
+.bg-9-1>p>span{
+    font-size: 28px;
+    line-height: 38px;
+    color: white;
+    font-style: normal;
+}
+.bg-10{
+    position: relative;
+    margin-top: 30px;
+    height: 400px;
+    background-color:#D7D7D7;
+}
+.bg-10>ul{
+    padding-left: 40px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    float: left;
+}
+.bg-10>ul>li{
+    line-height: 36px;
+}
+.bg-10>ul>li>p{
+    font-family: 宋体;
+    font-size: 16px;
+}
+.bg-10>ul>li>p>i{
+    font-size: 12px;
+}
+.bg-10-1{
+    color: white;
+    background-color: crimson;
+    height: 150px;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    float: left;
+}
+.bg-10-1-1{
+    width: 230px;
+    height: 90px;
+    padding: 30px 10px;
+}
+.a{
+    height: 85px;
+    width: 0;
+    float: left;
+    border: solid 1px white;
+}
+.bg-10-1-1 p:first-child{
+    font-size: 90px;
+    line-height: 90px;
+    width: 60px;
+    height: 90px;
+    float: left;
+}
+.bg-10-1-1 p:nth-child(3){
+    font-size: 17px;
+    line-height: 25px;
+    float: left;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.bg-10-1-1 p:nth-child(4){
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 70px;
+}
+.bg-10>p{
+    font-size: 12px;
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    width: 150px;
+    float: left;
+}
+.bg-10>p>b{
+    height: 12px;
+    width: 12px;
+    line-height: 10px;
+    font-size: 28px;
+}
+.bg-bg>a{
+    float: right;
+    text-decoration: none;
+    font-size: 12px;
+    color: crimson;
+}
+

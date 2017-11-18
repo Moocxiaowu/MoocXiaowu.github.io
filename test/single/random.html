@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check</title>
+    <style>
+        .wrap{ width:200px; margin:0 auto; padding-top: 100px;}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <button class="" value="" style="" onclick="d()"><h1>抽 蛋</h1></button>
+</div>
+
+<script>
+    function d() {
+        var fruit=new Array("鸭蛋","咸蛋","鹅蛋","鸡蛋","皮蛋","鸵鸟蛋");
+        var x = Math.round(Math.random()*(fruit.length-1));
+        alert("抽到的蛋是:"+fruit[x]);
+    }
+</script>
+</body>
+</html>
