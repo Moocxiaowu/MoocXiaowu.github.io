@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check</title>
+</head>
+<style>
+    .wrap{ width:200px; margin:0 auto; padding-top: 100px;}
+</style>
+<body>
+<div class="wrap">
+    <p><input id="all" type="checkbox" value="全选" onclick="check();">全选</p>
+    <p><input name="product" type="checkbox" value="1">苹果</p>
+    <p><input name="product" type="checkbox" value="2">香蕉</p>
+    <p><input name="product" type="checkbox" value="3">梨子</p>
+    <p><input name="product" type="checkbox" value="4">哈密瓜</p>
+    <p><input name="product" type="checkbox" value="5">柚子</p>
+    <p><input name="product" type="checkbox" value="6">葡萄</p>
+    <p><input name="product" type="checkbox" value="7">香瓜</p>
+    <p><input name="product" type="checkbox" value="8">提子</p>
+    <p><input name="product" type="checkbox" value="9">火龙果</p>
+</div>
+<script>
+    function check() {
+        var oput=document.getElementsByName("product");
+        for(var i=0;i<oput.length;i++){
+            oput[i].checked=document.getElementById("all").checked;
+        }
+    }
+</script>
+</body>
+</html>
