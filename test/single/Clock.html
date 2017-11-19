@@ -19,26 +19,25 @@
         var week=["日","一","二","三","四","五","六"];
         var day=week[today.getDay()];
         var hh=today.getHours();
-        var time;
+        var time=null;
+        var mm=today.getMinutes();
+        var ss=today.getSeconds();
+        var str=["00","01","02","03","04","05","06","07","08","09"];
         if(hh<=12){
             time="上午";
-            var hours=["00","01","02","03","04","05","06","07","08","09"];
+            var hours=["00","01","02","03","04","05","06","07","08","09","10","11"];
             hh=hours[today.getHours()];
         }
-        else if(hh>12) {
+        else{
             time="下午";
             var hour=["01","02","03","04","05","06","07","08","09","10","11"];
             hh=hour[today.getHours() - 13];
         }
-        var mm=today.getMinutes();
         if(mm<10){
-            var minutes=["00","01","02","03","04","05","06","07","08","09"];
-            mm=minutes[today.getMinutes()];
+            mm=str[today.getMinutes()];
         }
-        var ss=today.getSeconds();
         if(ss<10){
-            var seconds=["00","01","02","03","04","05","06","07","08","09"];
-            ss=seconds[today.getSeconds()];
+            ss=str[today.getSeconds()];
         }
         document.getElementById("myclock").innerHTML="<h4>"+year+"年"+month+"月"+date+"日 星期"+day+"<p>"+time+" "+hh+":"+mm+":"+ss+"</p></h4>";
     }
