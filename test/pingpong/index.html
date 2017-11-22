@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ping Pong</title>
+    <link href="PingPong.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Ping Pong</h1>
+    </header>
+
+    <div id="scoreboard">
+        <div class="score">格驰 : <span id="scoreA">0</span></div>
+        <div class="score">鸣鸣 : <span id="scoreB">0</span></div>
+    </div>
+
+    <div id="game" >
+        <div id="playground">
+            <div id="paddleA" class="paddle"><small></small></div>
+            <div id="paddleB" class="paddle"></div>
+            <div id="ball"></div>
+        </div>
+    </div>
+
+    <p>这是一个乒乓游戏</p>
+    <p>玩家1：W 控制上移 S 控制下移</p>
+    <p>玩家2：方向键up 控制上移 方向键down 控制下移</p>
+
+    <script src="../../StyleSheets/jquery-3.2.1.min.js"></script>
+    <script src="H5game.PingPong.js"></script>
+
+</body>
+</html>
